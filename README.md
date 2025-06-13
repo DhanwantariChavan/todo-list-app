@@ -1,70 +1,47 @@
-# Getting Started with Create React App
+# Todo List App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A simple and clean React-based Todo List application with full CRUD functionality, filtering, sorting, and localStorage persistence.
 
-## Available Scripts
+## Features
 
-In the project directory, you can run:
+-  Add new tasks with validation
+-  Mark tasks as complete/incomplete
+-  Delete tasks
+-  Filter tasks (All, Active, Completed)
+-  Sort tasks (Newest, Oldest, Alphabetical)
+-  Clear completed tasks
+-  Persistent storage using localStorage
+-  Task statistics display
+-  Responsive design
+-  Input validation (empty tasks, duplicates, max length)
 
-### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Testing Guide
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### Manual Testing Checklist
 
-### `npm test`
+#### Basic Functionality
+- 1. Add a new task by typing and clicking "Add Task"
+- 2. Add a task by typing and pressing Enter
+- 3. Try to add an empty task (should show error)
+- 4. Try to add a very long task (should show error)
+- 5. Try to add a duplicate task (should show error)
+- 6. Click checkbox to mark task as complete
+- 7. Click checkbox again to mark as incomplete
+- 8. Click "Delete" button to remove a task
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+#### Filtering
+- 1. Select "Active Tasks" filter (should show only incomplete tasks)
+- 2. Select "Completed Tasks" filter (should show only completed tasks)
+- 3. Select "All Tasks" filter (should show all tasks)
 
-### `npm run build`
+#### Sorting
+- 1. Select "Newest First" sorting
+- 2. Select "Oldest First" sorting  
+- 3. Select "Alphabetical" sorting
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+#### Additional Features
+- 1. Click "Clear Completed" button (should remove all completed tasks)
+- 2. Refresh the page (tasks should persist due to localStorage)
+- 3. Check task statistics update correctly
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
