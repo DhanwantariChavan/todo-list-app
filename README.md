@@ -45,3 +45,21 @@ A simple and clean React-based Todo List application with full CRUD functionalit
 2. Refresh the page (tasks should persist due to localStorage)
 3. Check task statistics update correctly
 
+
+## Screenshots
+
+### Main Interface
+![Main Interface](screenshots/main-interface.PNG)
+*Clean, intuitive interface showing active and completed tasks*
+
+### Filtering Options
+![Filter Option](screenshots/filter.png) 
+*Filter tasks by status: All, Active, or Completed*
+
+### Sorting Features
+![Sorting Options](screenshots/sorting.png)
+*Sort tasks by Newest First,Oldest First or Alphabetically*
+
+### Input Validation
+![Validation Errors](screenshots/validation.PNG)
+*Built-in validation prevents empty, duplicate, or overly long tasks*
